@@ -8,6 +8,8 @@ import {
 } from '@mantine/core';
 import { useState } from 'react';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
+import { projectList } from './data/projects';
 
 function App() {
     const [colorScheme, setColorScheme] = useState<ColorScheme>('light');
@@ -27,6 +29,7 @@ function App() {
                 <NavBar />
                 <Hero />
                 <Skills />
+                <Projects projects={projectList} />
             </MantineProvider>
         </ColorSchemeProvider>
     );

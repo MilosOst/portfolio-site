@@ -17,6 +17,16 @@ const useStyles = createStyles((theme) => ({
         padding: '1rem 1.5rem',
     },
 
+    name: {
+        fontFamily: 'Poppins, sans-serif',
+        fontWeight: 500,
+    },
+
+    description: {
+        fontFamily: 'Poppins, sans-serif',
+        fontWeight: 300,
+    },
+
     image: {
         border: '1px solid black',
         boxShadow: '1px 1px 4px 1px #cfcfcf',
@@ -37,10 +47,10 @@ const Hero = () => {
             />
 
             <Box className={classes.about}>
-                <Text component="h2" size="l">
+                {/* <Text component="h2" size="l" className={classes.name}>
                     Milos Ostojic
-                </Text>
-                <Text size="m">
+                </Text> */}
+                <Text component="h4" fz="md" my={0} className={classes.description}>
                     Hi there, I&apos;m Milos Ostojic, a 3rd year CS Student at
                     UTM with a passion for software development. I love learning
                     new technologies and frameworks, with my current focus being
