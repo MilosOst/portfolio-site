@@ -1,5 +1,4 @@
-import { Avatar, Box, Container, Text, createStyles } from '@mantine/core';
-import placeholderImage from '../assets/placeholder.jpg';
+import { Box, Container, Text, createStyles } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
     container: {
@@ -38,14 +37,6 @@ const Hero = () => {
 
     return (
         <Container size="sm" className={classes.container}>
-            <Avatar
-                size={120}
-                src={placeholderImage}
-                alt="Profile Image"
-                className={classes.image}
-                radius={40}
-            />
-
             <Box className={classes.about}>
                 {/* <Text component="h2" size="l" className={classes.name}>
                     Milos Ostojic

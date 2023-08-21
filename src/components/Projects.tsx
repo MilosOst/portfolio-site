@@ -8,7 +8,10 @@ const Projects = ({ projects }: { projects: ProjectType[] }) => {
             <SimpleGrid
                 cols={3}
                 spacing="lg"
-                breakpoints={[{ maxWidth: 'md', cols: 1 }]}
+                breakpoints={[
+                    { maxWidth: 'md', cols: 2 },
+                    { maxWidth: 'sm', cols: 1 },
+                ]}
             >
                 {projects.map((project) => (
                     <Project project={project} key={project.name} />
