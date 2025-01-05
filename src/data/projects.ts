@@ -5,9 +5,33 @@ export interface Project {
     images: string[];
     startDate: string;
     endDate: string;
+    link?: string;
 }
 
 export const projectList: Project[] = [
+    {
+        name: "PizzApocalypse",
+        description: "Worked in a group of 10+ CS, Art, and Music students to develop a 3D FPS video game. The game has the player play as an overworked pizza delivery driver who has to delivery pizzas to customers before they lose their patience, otherwise they will start to chase and attack the player. The game is built in C# using Unity, and was the course long project for an Intro to Video Game Design course.",
+        languagesAndFrameworks: ["Unity", "C#", "Trello"],
+        images: ["pizzApocalypse-hud", "pizzApocalypse-menu"],
+        startDate: "Sep 2024",
+        endDate: "Dec 2024",
+        link: "https://team-pizzapocalypse.itch.io/pizzapocalypse"
+    },
+    {
+        name: "KaufList",
+        description: "KaufList is a simple grocery list app I developed to make grocery shopping easier. This is also my first personal iOS app that I have published on the App Store, and has received a modest 100+ downloads so far. It is built using the Swift language using Apple's UIKit and CoreData frameworks.",
+        languagesAndFrameworks: ["Swift", "UIKit", "CoreData"],
+        images: [
+            "kaufList-1",
+            "kaufList-2",
+            "kaufList-3",
+            "kaufList-4"
+        ],
+        startDate: "May 2024",
+        endDate: "Jun 2024",
+        link: "https://apps.apple.com/ca/app/kauflist-grocery-list/id6504136693"
+    },
     {
         name: 'Basketball Training App',
         description:
@@ -20,7 +44,7 @@ export const projectList: Project[] = [
             'training-creation',
         ],
         startDate: 'Jul 2023',
-        endDate: 'Present',
+        endDate: 'Sep 2023',
     },
     {
         name: 'Mange',
@@ -41,7 +65,7 @@ export const projectList: Project[] = [
             'mange-list',
         ],
         startDate: 'Nov 2022',
-        endDate: 'Present',
+        endDate: 'Feb 2023',
     },
     {
         name: 'Tetris',

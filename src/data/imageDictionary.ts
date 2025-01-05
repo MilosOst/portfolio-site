@@ -13,6 +13,14 @@ import tetrisMenu from '../assets/projectScreenshots/tetris/tetrisMenu.png';
 import tetrisGameplay from '../assets/projectScreenshots/tetris/tetrisGameplay.png';
 import tetrisColorBlind from '../assets/projectScreenshots/tetris/tetrisColorBlind.png';
 
+import kaufList1 from '../assets/projectScreenshots/kaufList/1.png';
+import kaufList2 from '../assets/projectScreenshots/kaufList/2.png';
+import kaufList3 from '../assets/projectScreenshots/kaufList/3.png';
+import kaufList4 from '../assets/projectScreenshots/kaufList/4.png';
+
+import pizzApocalypseMenu from '../assets/projectScreenshots/pizzApocalypse/menu.png';
+import pizzApocalypseHud from '../assets/projectScreenshots/pizzApocalypse/hud.png';
+
 export const imageMap = new Map<string, string>();
 
 imageMap.set('training-creation', trainingCreation);
@@ -28,3 +36,11 @@ imageMap.set('mange-list', mangeList);
 imageMap.set('tetris-menu', tetrisMenu);
 imageMap.set('tetris-gameplay', tetrisGameplay);
 imageMap.set('tetris-colorblind', tetrisColorBlind);
+
+imageMap.set("kaufList-1", kaufList1);
+imageMap.set("kaufList-2", kaufList2);
+imageMap.set("kaufList-3", kaufList3);
+imageMap.set("kaufList-4", kaufList4);
+
+imageMap.set("pizzApocalypse-menu", pizzApocalypseMenu);
+imageMap.set("pizzApocalypse-hud",pizzApocalypseHud);

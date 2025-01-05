@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import {
+    Anchor,
     Badge,
     Card,
     Container,
@@ -22,11 +23,10 @@ const useStyles = createStyles((theme) => ({
     },
 
     section: {
-        borderBottom: `${rem(1)} solid ${
-            theme.colorScheme === 'dark'
-                ? theme.colors.dark[4]
-                : theme.colors.gray[3]
-        }`,
+        borderBottom: `${rem(1)} solid ${theme.colorScheme === 'dark'
+            ? theme.colors.dark[4]
+            : theme.colors.gray[3]
+            }`,
         paddingLeft: theme.spacing.md,
         paddingRight: theme.spacing.md,
         paddingBottom: theme.spacing.md,
@@ -131,14 +131,28 @@ const Project = ({ project }: { project: ProjectType }) => {
 
             <Card.Section className={classes.section}>
                 <Group position="apart" mt={20}>
-                    <Text
-                        component="h2"
-                        my={0}
-                        fz="md"
-                        className={classes.title}
-                    >
-                        {project.name}
-                    </Text>
+                    {project.link != null ? (
+                        <Anchor href={project.link} target='_blank'>
+                            <Text
+                                component="h2"
+                                my={0}
+                                fz="md"
+                                className={classes.title}
+                            >
+                                {project.name}
+                            </Text>
+                        </Anchor>
+                    ) : (
+                        <Text
+                            component="h2"
+                            my={0}
+                            fz="md"
+                            className={classes.title}
+                        >
+                            {project.name}
+                        </Text>
+                    )}
+
                     <Badge size="sm" className={classes.duration}>
                         {project.startDate} - {project.endDate}
                     </Badge>

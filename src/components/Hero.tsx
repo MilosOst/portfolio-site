@@ -42,8 +42,8 @@ const Hero = () => {
                     Milos Ostojic
                 </Text> */}
                 <Text component="h4" fz="md" my={0} className={classes.description}>
-                    Hi there, I&apos;m Milos Ostojic, a 3rd year CS Student at
-                    UTM with a passion for software development. I love learning
+                    Hi there, I&apos;m Milos Ostojic, a 4th year CS Student at
+                    UTM with a passion for software development. I enjoy learning
                     new technologies and frameworks, with my current focus being
                     iOS development.
                 </Text>
